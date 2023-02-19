@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sleekandchic.css">
+    <title>Sleek & Chic Boutique - About Us</title>
+</head>
+
+<body class="about">
+    <img src="./Images/cropped-sleek-header-logo.jpg">
+
+    <div id="navigation">
+        <ul>
+            <li style="float:right"><a class="active" href="./shop.html">Store</a></li>
+            <li style="float:right"><a class="active" href="./contact.html">Contact</a></li>
+            <li style="float:right"><a class="active" href="./about.html">About</a></li>
+            <li style="float:right"><a class="active" href="./home.html">Home</a></li>
+        </ul>
+    </div>
+
+    <img src="./Images/aboutus.jpg" width="100%" alt="shop floor" height="100%"
+        style="vertical-align:middle;margin:50px 0px">
+
+    <div class="largecircle">Founded in 1989</div>
+    <p>We are a local boutique store specialising
+        in the latest fashion trends. With clothes appropriate for
+        men, children, women and babies alike.</p>
+
+    <br>
+
+    <div class="largecircle">Family run</div>
+    <p>We are a family run business who pride ourselves on the
+        service we have provided our communities for the last 50
+        years.</p>
+
+    <br>
+
+    <div id="footer">
+        <footer>
+            <div class="footer2">
+                <table>
+                    <tr>
+                        <th>
+                        <td>Email: example@example.com</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>Phone: +44 (0)113 3452522</td>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <h6>Copyright Sleek and Chic © 2023. All Rights Reserved
+                - Website Design By Apphia.</h6>
+        </footer>
+    </div>
+
+</body>
+
+</html>
