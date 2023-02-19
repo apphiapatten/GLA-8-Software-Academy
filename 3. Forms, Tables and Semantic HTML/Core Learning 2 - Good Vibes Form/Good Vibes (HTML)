@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./goodvibesform.css" rel="stylesheet">
+    <title>Good Vibes - Feedback Form</title>
+</head>
+
+<body>
+    <form action="/goodvibesform.html" method="post">
+        <h1>Good Vibes Form</h1>
+        <h4>Tell us something positive that happened to you today.</h4>
+        <br>
+
+<!--Portfolio Tasks [User Story 3] - autocomplete off-->
+
+        <label for="fname">Name*</label>
+        <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your First & Last name" size="22"><br>
+
+        <br>
+        <br>
+
+        <label for="email">Email*</label>
+        <input type="text" autocomplete="off" id="email" name="email"><br>
+
+        <br>
+        <br>
+
+<!--Portfolio Tasks [User Story 2] - adding a range of ages-->
+
+        <label for="age">How old are you?</label>
+        <select name="age" id="age">
+            <option value="teen">18-25</option>
+            <option value="youth">26-30</option>
+            <option value="adult">31-35</option>
+            <option value="middle">36-45</option>
+            <option value="aged">45+</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="scale">On a scale of 1-10, how good was it?*</label>
+        <input type="number" id="scale" name="scale" min="1" max="10" placeholder="Enter a number between 1 and 10"><br>
+
+        <br>
+        <br>
+
+        <label for="location">Where did it happen?</label>
+        <select name="location" id="location">
+            <option value="home">At Home</option>
+            <option value="work">At Work</option>
+            <option value="abroad">Abroad</option>
+            <option value="out">Out & About</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br>
+        <br>
+
+<!--I noticed that to align the radio buttons vertically
+and in the center; I'd have to assign them to a div. I
+used float, margin-right and margin-top to line them up
+but the position of the buttons change depending on the
+window size. I'm not sure how to make these elements fixed/
+default. It may be something to do with media queries but
+I'm not certain. Perhaps you can let me know when you can.-->
+
+        <p>At what time of day did it happen?
+            <input type="radio" id="morning" name="time" value="morning">
+            <label for="morning">Morning</label>
+        </p>
+
+        <div id="radio_fields" class="alignment">
+            <input type="radio" id="afternoon" name="time" value="afternoon">
+            <label for="afternoon">Afternoon</label><br>
+            <input type="radio" id="evening" name="time" value="evening">
+            <label for="evening">Evening</label><br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>What emotions did you experience?<input type="checkbox" id="feeling" name="excited" value="excited">
+            <label for="excited">Excited</label><br>
+            (Select all that apply)
+        </p>
+
+        <div id="checkbox" class="emotions">
+            <input type="checkbox" id="feeling" name="humbled" value="humbled">
+            <label for="humbled">Humbled</label><br>
+            <input type="checkbox" id="feeling" name="elated" value="elated">
+            <label for="elated">Elated</label><br>
+            <input type="checkbox" id="feeling" name="loved" value="loved">
+            <label for="loved">Loved</label><br>
+            <input type="checkbox" id="feeling" name="enthusiastic" value="enthusiastic">
+            <label for="enthusiastic">Enthusiastic</label><br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>Please describe your positive experience.</p>
+
+        <div id="experience" class="experience">
+            <label for="experience"></label>
+            <textarea id="experience" name="experience" rows="3" cols="30"></textarea>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="submit" class="button">
+            <input type="submit" value="Submit" onclick="message()">
+        </div>
+
+<!--Portfolio Tasks [User Story 1] - I attempted to add an alert to the form.
+I followed this video for the code but it didn't seem to work the same for me.
+[https://www.youtube.com/watch?v=lRrrLCrZDxI]-->
+
+        <div class="message">
+            <div class="success" id="success">You have successfully submitted the form. Thanks for your feedback.>
+                <div class="danger" id="danger">All fields haven't been completed. Please check and try again.>
+                </div>
+            </div>
+
+        </div>
+
+<!--The alert button shows up consistently regardless of whether
+the submit button is pressed. If you could show me how to rectify
+this so I know for next time that'll be great.-->
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            You have successfully submitted the form. Thanks for your feedback.
+        </div>
+
+        <script src="./goodvibesform.js"></script>
+
+    </form>
+</body>
+
+</html>
