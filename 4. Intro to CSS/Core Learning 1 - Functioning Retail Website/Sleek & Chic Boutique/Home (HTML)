@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sleekandchic.css">
+    <title>Sleek & Chic Boutique - for all your fashion needs</title>
+</head>
+
+<body class="home">
+    <img src="./Images/cropped-sleek-header-logo.jpg">
+
+<!--Portfolio Tasks [User Story 3] - add a navigation bar-->
+    <div id="navigation">
+        <ul>
+            <li style="float:right"><a class="active" href="./shop.html">Store</a></li>
+            <li style="float:right"><a class="active" href="./contact.html">Contact</a></li>
+            <li style="float:right"><a class="active" href="./about.html">About</a></li>
+            <li style="float:right"><a class="active" href="./home.html">Home</a></li>
+        </ul>
+    </div>
+
+    <img src="./Images/storefloor.jpg" alt="shop floor" width="100%" height="100%"
+        style="vertical-align:middle;margin:50px 0px">
+
+    <div class="middle">
+        <table>
+            <tr>
+                <td>
+                    <figure>
+                        <img src="./Images/fashion.jpg" width="75%" height="100%">
+                        <figcaption>All your latest fashion here</figcaption>
+                </td>
+                </figure>
+                <td>
+                    <figure>
+                        <img src="./Images/shopfloorclean.jpg" width="100%" height="100%">
+                        <figcaption>Options for both men, women &
+                            children
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <p>No matter what the ocassion, whether professional or party;
+        we have all your fashion needs here. From the latest to the
+        trendiest, dresses to rompers; it's all here.</p>
+
+    <br>
+
+    <div id="products">
+        <table style="width: 100%;">
+            <thead>
+                <th></th>
+            </thead>
+            <tr>
+                <th>
+                <td><img src="./Images/Klarna-ad-dw-600x763.jpg" width="100%"></td>
+                </th>
+                <th></th>
+                <td>
+                    <form id="newsletter" action="./home.html" method="post">
+                        <h1>Subscribe to the Sleek & Chic Newsletter</h1>
+                        <h4>Signup and never miss out again on exclusive offers and more.</h4>
+                        <br>
+
+                        <label for="fname">First Name*</label>
+                        <input type="text" autocomplete="off" id="fname" name="fname"
+                            placeholder="Enter your First name" size="22">
+                        <br>
+                        <br>
+                        <br>
+
+                        <label for="lname">Last Name*</label>
+                        <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your Last name"
+                            size="22">
+                        <br>
+                        <br>
+                        <br>
+
+                        <label for="email">Email*</label>
+                        <input type="text" autocomplete="off" id="email" name="email">
+                        <br>
+                        <br>
+
+                        <p>You can unsubscribe from the Sleek &
+                            Chic newsletter at any time. For more
+                            details, review our Privacy Policy.</p>
+
+                        <a href="./shop.html">
+                            <button class="newsletter">Subscribe</button></a>
+        </table>
+    </div>
+    </form>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="button2">
+        <a href="./shop.html">
+            <button class="button button1">Shop Now</button></a>
+    </div>
+
+    <br>
+
+    <div id="footer">
+        <footer>
+            <div class="footer2">
+                <table>
+                    <tr>
+                        <th>
+                        <td>Email: example@example.com</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>Phone: +44 (0)113 3452522</td>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <h6>Copyright Sleek and Chic © 2023. All Rights Reserved
+                - Website Design By Apphia.</h6>
+        </footer>
+    </div>
+</body>
+
+</html>
