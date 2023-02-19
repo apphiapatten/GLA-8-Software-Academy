@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sleekandchic.css">
+    <title>Sleek & Chic Boutique - Shop</title>
+</head>
+
+<body class="shop">
+    <img src="./Images/cropped-sleek-header-logo.jpg">
+
+    <div id="navigation">
+        <ul>
+            <li style="float:right"><a class="active" href="./shop.html">Store</a></li>
+            <li style="float:right"><a class="active" href="./contact.html">Contact</a></li>
+            <li style="float:right"><a class="active" href="./about.html">About</a></li>
+            <li style="float:right"><a class="active" href="./home.html">Home</a></li>
+        </ul>
+    </div>
+
+    <img src="./Images/2012_REGENT_STREET_STORE_03.jpg.crdownload" width="100%" alt="shop floor" height="100%"
+        style="vertical-align:middle;margin:50px 0px">
+
+    <div class="circle">1</div>
+    <p>Choose your items</p>
+
+    <br>
+
+<!--These are the products catalogue-->
+
+    <div class="card">
+        <img src="./Images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">£19.99</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Post surf session calls for comfort in these organic
+            cotton jeans. Tailored for improved fit, yet loose
+            fitting to allow for space to relax. The crop length
+            and raw hem edge keeps things casual.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/ripped.jpg" alt="ripped Jeans" style="width:69%">
+        <h1>Ripped Jeans</h1>
+        <p class="price">£25.00</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Women High Waist Ripped Jeans Button Pants Trousers Pocket
+            Slim Pants We can guarantee that the overall style displayed
+            in the photography is accurate, however there may be
+            differences in how the style appears during wear. </p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/bodycondress.jpg" alt="Bodycon Dress" style="width:69%">
+        <h1>Bodycon Dress</h1>
+        <p class="price">£20.00</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Spaghetti strap cutout back glitter bodycon club party
+            mini dress for women,sexy yet elegant. Combining the
+            advantages of two fabrics,this dress is soft and
+            comfortable; sufficiently flexible,avoiding the
+            uncomfortable sense of binding. 65% Polyester, 35%
+            Elastane. Fastening: Pull On. Bodycon. Sleeveless </p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/hoodedcoat.jpg" alt="Hooded Coat" style="width:85%">
+        <h1>Puffer Coat</h1>
+        <p class="price">£50.00</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Stay warm and cozy in this petite puffer coat from
+            Lauren Ralph Lauren, a stylish pick designed with
+            pretty faux fur surrounding the zip-off hood. Imported,
+            lined; two side pockets; stand collar & zip-off hood
+            and zip-off faux-fur trim; front zipper closure with
+            button overlay.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/pufferjacket.jpg" alt="Puffer Jacket" style="width:100%">
+        <h1>Puffer Jacket</h1>
+        <p class="price">£45.99</p>
+        <h5>Size S - XXXL available</h5>
+        <p>This crop jacket will complete your outfits instantly
+            and keep you comfy, trendy and warm, perfect for
+            everyday and night-outs.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/summer-rompers-16.3.jpg" alt="Romper" style="width:100%">
+        <h1>Romper</h1>
+        <p class="price">£15.00</p>
+        <h5>Size S - XXXL available</h5>
+        <p>It has a simple, button-down design with long sleeves
+            and side pockets to store your essentials. Adorable
+            and relaxed-looking, this is the ideal casual romper to
+            wear on vacation with sneakers or sandals. Top it off
+            with a crossbody bag as you’re roaming and you’ll be set!</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/cargopants.jpg" alt="Cargo Pants" style="width:100%">
+        <h1>Cargo Pants</h1>
+        <p class="price">£20.00</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Go far in Cargos. Don a pair of utility-style men's
+            cargo trousers for a laid-back, relaxed to the max,
+            everyday kinda vibe. Whack 'em on with a box fresh
+            white tee and you're looking fresh with minimal effort.
+            Job done.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+        <img src="./Images/skirt.jpg" alt="Skirt" style="width:100%">
+        <h1>Pleated Skirt</h1>
+        <p class="price">£34.99</p>
+        <h5>Size S - XXXL available</h5>
+        <p>Embrace the playful nostalgia our Check Mini Skirt
+            brings this season. A classic piece that won't go out
+            of style, you can't go wrong. Relaxed fit – the classic
+            Superdry fit. Not too slim, not too loose, just right.
+            Go for your normal size.</p>
+        <p><button>Add to Cart</button></p>
+    </div>
+
+    <br>
+    <br>
+
+<!--This is a product order form-->
+
+    <div class="circle">2</div>
+    <p>Complete the order form below. Remember to specify the
+        sizes.</p>
+
+    <form id="newsletter" action="./home.html" method="post">
+        <h1>Product Order Form</h1>
+        <h4>Choose your items, complete all fields. Don't forget
+            to specify your sizes!</h4>
+        <br>
+
+        <label for="fname"><b>First Name:*</b></label>
+        <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your First name" size="22">
+        <br>
+        <br>
+        <br>
+
+        <label for="lname"><b>Last Name:*</b></label>
+        <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your Last name" size="22">
+        <br>
+        <br>
+        <br>
+
+        <label for="email"><b>Email:*</b></label>
+        <input type="text" autocomplete="off" id="email" name="email" placeholder="Please write your email">
+        <br>
+        <br>
+        <br>
+
+        <label for="telephone"><b>Mobile #:*</b></label>
+        <input type="tel" autocomplete="off" id="mobile" name="mobile" placeholder="Please include area code">
+        <br>
+        <br>
+        <br>
+
+        <label for="address"><b>Address:*</b></label>
+        <textarea id="address" name="address" rows="8" cols="20">Please write your address including postcode</textarea>
+        <br>
+        <br>
+        <br>
+
+        <label for="products" id="productintro"><b>Choose Your Products:*</b></label>
+        <div id="products">
+            <input type="checkbox" id="jeans" name="jeans" value="Tailored Jeans">
+            <label for="jeans">Tailored Jeans (£19.99)</label><br>
+            <input type="checkbox" id="ripped" name="ripped" value="Ripped Jeans">
+            <label for="ripped">Ripped Jeans (£25.00)</label><br>
+            <input type="checkbox" id="dress" name="dress" value="Bodycon Dress">
+            <label for="dress">Bodycon Dress (£20.00)</label><br>
+            <input type="checkbox" id="puffer" name="coat" value="Puffer Coat">
+            <label for="coat">Puffer Coat (£50.00)</label><br>
+            <input type="checkbox" id="jacket" name="jacket" value="Puffer Jacket">
+            <label for="jacket">Puffer Jacket (£45.99)</label><br>
+            <input type="checkbox" id="romper" name="romper" value="Romper">
+            <label for="romper">Romper (£15.00)</label><br>
+            <input type="checkbox" id="cargo" name="cargo" value="Cargo Pants">
+            <label for="cargo">Cargo Pants (£20.00)</label><br>
+            <input type="checkbox" id="skirt" name="skirt" value="Pleated Skirt">
+            <label for="skirt">Pleated Skirt (£34.99)</label>
+        </div>
+
+        <br>
+        <br>
+
+        <label for="sizes"><b>Choose your size*:</b></label>
+        <select id="sizes" name="sizes">
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extralarge">XL</option>
+            <option value="extralarge2">XXL</option>
+            <option value="extralarge3">XXXL</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br>
+    <br>
+
+    <div class="circle">3</div>
+    <p>That's it! Thanks for your order. Rest assured, we will aim to ship your order within
+        24 hours!</p>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="footer">
+        <footer>
+            <div class="footer2">
+                <table>
+                    <tr>
+                        <th>
+                        <td>Email: example@example.com</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>Phone: +44 (0)113 3452522</td>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <h6>Copyright Sleek and Chic © 2023. All Rights Reserved
+                - Website Design By Apphia.</h6>
+        </footer>
+    </div>
+
+</body>
+
+</html>
