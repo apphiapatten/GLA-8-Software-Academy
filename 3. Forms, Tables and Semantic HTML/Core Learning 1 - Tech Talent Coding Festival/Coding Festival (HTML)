@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Portfolio Task [User Story 3] - Mobile Responsive-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Talent Coding Festival</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+    </style>
+    <link href="./codingfestival.css" rel="stylesheet">
+</head>
+
+<!--This is the original table before the update task in
+core learning 1
+
+<body>
+    <table rules="all" style="width: 55%;">
+        <thead>
+            <th colspan="2">Workshop Schedule</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Time</td>
+                <td>Event</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Welcome to the Festival</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Python 101</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Keeping you cyber secure</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td>The WWW and HTML</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Group Project</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+-->
+<!--Portfolio Task [User Story 2] - Adding a table caption-->
+
+<body>
+    <table rules="all" style="width: 55%;">
+        <caption>Tech Talent Coding Festival - Events Schedule</caption>
+        <thead>
+            <th colspan="20">Workshop Schedule</th>
+        </thead>
+        <tr>
+            <th></th>
+            <th scope="col" colspan="15">Saturday</th>
+            <th scope="col" colspan="8">Sunday</th>
+        </tr>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Time</td>
+                <td id="black" colspan="7"></td>
+                <td id="black" colspan="7"></td>
+                <td id="black" colspan="7"></td>
+            </tr>
+            <tr>
+
+<!-- I wanted to be able to replicate the Python 101 column under
+Sunday but was finding it difficult in terms of how to code this. I 
+Googled, checked & posted on Stack Overflow but cannot seem to figure it
+out. I thought maybe it's to do with the CSS properties so I added an ID
+to that cell but still cannot figure it out. So I've written it in the 
+footer instead. If you could help me with this so that I know for next 
+time then please let me know.-->
+
+                <td>11:00</td>
+                <td style="width: 1px;" rowspan="5">Python 101</td>
+                <td id="python1012" style="width: 1px;" rowspan="5">Python 101</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td colspan="18">Welcome to the Festival</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td colspan="18">Keeping you cyber secure</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td colspan="18">The WWW and HTML</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td colspan="19">Group Project</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td id="black" colspan="18"></td>
+                <td>CEO's Closing Speech</td>
+            </tr>
+
+            <!--Portfolio Task [User Story 1] - Adding a footer to the table-->
+
+        <tfoot>
+            <tr style="background-color:lightgray;">
+                <td>Python 101</td>
+                <td>Also runs on Sunday</td>
+                <td>At the same times</td>
+                <td colspan="18">Between 11am to 3pm</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+
+</html>
