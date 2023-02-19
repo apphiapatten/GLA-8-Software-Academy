@@ -1,0 +1,80 @@
+//Step 1 - create an array called fruits and add some data
+let fruits = [
+    "Apple",
+    "Orange",
+    "Banana",
+    "Pear",
+    "Peach",
+    "Strawberry",
+    "Cherry",
+    "Acai"
+]
+
+//Step 2 - iterate through the array using a for-in loop
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+/*NOTES - i = iteration counter. i = 0 is the start point. i < fruits.length is the check to see if the loop has counted within fruits.length 
+which in this case is 8, if it is > fruits.length then the iteration will stop. i++ is to count up until the middle clause is reached 
+assuming this is not infinity.*/
+
+const vowels_array = ["a", "e", "i", "o", "u"]
+
+/*Step 3 - within the loop create two variables (vowels & consonants) and set to zero
+Step 4 - Use a for loop (inside the first loop) to look through every letter of the array*/
+
+for (let i = 0; i < fruits.length; i++) {
+    let vowels = 0;
+    let consonants = 0;
+
+/*NOTES - fruitsCheck is the start of the for loop iteration. It's not been set to 0 as I want it to start from the data given in fruits[i]. 
+fruits[i].toLowerCase formats the string into lower cases which is important for us to compare our vowels_array table which is also in lower 
+cases.*/
+
+    for (let fruitsCheck of fruits[i].toLowerCase()) {
+
+/*NOTES - vowels_array.includes(fruitsCheck) will check that the fruitsCheck data(this is provided by fruits[i]) for example "apple" includes the strings 
+in the array called vowels_array. It will return true if they exist in the array or false if they don't exist and if exists, it will also count up 
+vowels using vowels++.*/
+
+        if (vowels_array.includes(fruitsCheck)) {
+            vowels++
+        } else {
+            consonants++
+        }
+    }
+
+/*NOTES - In the if function, if the condition is satisfied then it will execute true. However if the condition is not met then it will not 
+execute any lines that would have occurred if the condition were met or will return false.*/
+
+/*NOTES - .substring finds out the first letter in the words of the fruits array(fruits[i]). The if statement makes sure that vowels_array.includes 
+returns a true or false for the letters checked through the .includes function which will scan the vowels_array array to find the vowels. If true, 
+then "An" will be listed in front of the fruit when printed to the console.*/
+
+//Step 5 - print the results of each element to the console window.
+
+//Portfolio Tasks [User Story 1] - if the fruit begins with a vowel, then the results printed in the console window should start with "An"
+    if (vowels > 1 && consonants == 1) {
+        if (vowels_array.includes(fruits[i].substring(0, 1).toLowerCase())) {
+            console.log("An " + fruits[i] + " has " + vowels + " vowels & has " + consonants + " consonant")
+        } else {
+            console.log(fruits[i] + " has " + vowels + " vowels & has " + consonants + " consonant")
+        }
+    } else if (vowels == 1 && consonants > 1) {
+        if (vowels_array.includes(fruits[i].substring(0, 1).toLowerCase())) {
+            console.log("An " + fruits[i] + " has " + vowels + " vowel & has " + consonants + " consonants")
+
+//Portfolio Tasks [User Story 2] - the output to display proper English grammar i.e., vowels (plural) & vowel (singular) etc.
+
+        } else {
+            console.log(fruits[i] + " has " + vowels + " vowel & has " + consonants + " consonants")
+        }
+    } else if (vowels > 1 && consonants > 1) {
+        if (vowels_array.includes(fruits[i].substring(0, 1).toLowerCase())) {
+            console.log("An " + fruits[i] + " has " + vowels + " vowels & has " + consonants + " consonants")
+        } else {
+            console.log(fruits[i] + " has " + vowels + " vowels & has " + consonants + " consonants")
+        }
+    }
+}
