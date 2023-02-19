@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    border: 5px solid rgb(95, 115, 205);
+}
+
+h1 {text-align: center;}
+
+
