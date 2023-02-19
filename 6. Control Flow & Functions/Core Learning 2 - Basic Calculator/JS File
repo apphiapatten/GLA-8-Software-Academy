@@ -1,0 +1,109 @@
+// Take the users operation
+const operation = prompt("Enter operation (either +,-,* or /): ");
+
+/* NOTES - parseFloat converts an input into a string initially and then returns a floating point number */
+
+// Take the users two numbers
+const num1 = parseFloat(prompt("Enter first number: "));
+const num2 = parseFloat(prompt("Enter second number: "));
+
+let calculatedResult;
+
+/* Step 3 - this is the original code excluding the changes made due to the Portfolio Task [User Story 3]
+switch (operation) {
+    case "*":
+        calculatedResult = (num1 * num2); // Step 2
+        console.log(num1 + " multiplied by " + num2 + " = " + calculatedResult); // Step 4
+        break;
+    case "+":
+        calculatedResult = (num1 + num2); // Step 2
+        console.log(num1 + " plus " + num2 + " = " + calculatedResult); // Step 4
+        break;
+    case "-":
+        calculatedResult = (num1 - num2); // Step 2
+        console.log(num1 + " minus " + num2 + " = " + calculatedResult); // Step 4
+        break;
+    case "/":
+        calculatedResult = (num1 / num2); // Step 2
+        console.log(num1 + " divided by " + num2 + " = " + calculatedResult); // Step 4
+        break;
+        calculatedResult = (num1 ** num2); // Step 2
+        console.log(num1 + " to the power of " + num2 + " = " + calculatedResult); // Step 4
+        break;
+    default:
+        console.log("Calculation error");
+}*/
+
+// Portfolio Task [User Story 3] - include sin, cos & tan on the calculator. These changes are made to implement user story 3
+
+function calculator() {
+
+    const operation = prompt("Enter operation (either +,-,^,sin,cos,tan,* or /): ");
+
+    let calculatedResult;
+
+    switch (operation) {
+        case "*":
+            const num1_Times = parseFloat(prompt("Enter first number: "));
+            const num2_Times = parseFloat(prompt("Enter second number: "));
+            calculatedResult_Times = (num1_Times * num2_Times);
+            console.log(num1_Times + " multiplied by " + num2_Times + " = " + calculatedResult_Times);
+            break;
+        case "+":
+            const num1_Plus = parseFloat(prompt("Enter first number: "));
+            const num2_Plus = parseFloat(prompt("Enter second number: "));
+            calculatedResult_Plus = (num1_Plus + num2_Plus);
+            console.log(num1_Plus + " plus " + num2_Plus + " = " + calculatedResult_Plus);
+            break;
+        case "-":
+            const num1_Subtract = parseFloat(prompt("Enter first number: "));
+            const num2_Subtract = parseFloat(prompt("Enter second number: "));
+            calculatedResult_Subtract = (num1_Subtract - num2_Subtract);
+            console.log(num1_Subtract + " minus " + num2_Subtract + " = " + calculatedResult_Subtract);
+            break;
+        case "/":
+            const num1_Divide = parseFloat(prompt("Enter first number: "));
+            const num2_Divide = parseFloat(prompt("Enter second number: "));
+            calculatedResult_Divide = (num1_Divide / num2_Divide);
+            console.log(num1_Divide + " divided by " + num2_Divide + " = " + calculatedResult_Divide);
+            break;
+
+// Portfolio Tasks [User Story 1] - add "to the power of" to the available operations
+
+        case "^":
+            const num1_toPower = parseFloat(prompt("Enter first number: "));
+            const num2_toPower = parseFloat(prompt("Enter second number: "));
+            calculatedResult_toPower = (num1_toPower * num2_toPower);
+            console.log(num1_toPower + " to the power of " + num2_toPower + " = " + calculatedResult_toPower);
+            break;
+        case "sin":
+            const num = parseFloat(prompt("Enter an angle in radians: "));
+            calculatedResult = Math.sin(num);
+            console.log("The sin of " + num + " = " + calculatedResult);
+            break;
+        case "cos":
+            const numCos = parseFloat(prompt("Enter an angle in radians: "));
+            calculatedResultCos = Math.cos(numCos);
+            console.log("The cos of " + numCos + " = " + calculatedResult_Cos);
+            break;
+        case "tan":
+            const numTan = parseFloat(prompt("Enter an angle in radians: "));
+            calculatedResult_Tan = Math.tan(numTan);
+            console.log("The tan of " + numTan + " = " + calculatedResult_Tan);
+            break;
+        default:
+            console.log("Calculation error");
+    }
+
+// Portfolio Tasks [User Story 2] - option to restart or quit calculation
+
+    const firstQuitOrRestart = prompt("Do you have another calculation (Y or N)?").toUpperCase();
+
+    if (firstQuitOrRestart == "Y") {
+        calculator();
+    } else {
+        console.log("Thanks for using the Calculator");
+    }
+}
+
+calculator()
