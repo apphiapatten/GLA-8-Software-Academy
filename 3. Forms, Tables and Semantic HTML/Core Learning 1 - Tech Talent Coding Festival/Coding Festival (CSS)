@@ -1,0 +1,17 @@
+body {
+
+  text-align: center;
+
+}
+
+tr {
+  height: 35px;
+}
+
+#black {
+  background-color: black;
+}
+
+#python1012 {
+  text-align: center;
+}
