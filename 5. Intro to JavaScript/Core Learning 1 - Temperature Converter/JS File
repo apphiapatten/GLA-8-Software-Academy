@@ -1,0 +1,71 @@
+/*NOTES
+xB0C = JavaScript code for Celsisus symbol
+xB0F = JavaScript code for Fahrenheit symbol
+u212A = JavaScript code for Kelvin symbol*/
+
+//Step 1 - create a formula for the conversion from Celsius to Fahrenheit
+function celsiusToFahrenheit(cel) {
+    let celsToFahr = cel * 9 / 5 + 32;
+    let result = cel + '\xB0C is ' + celsToFahr + '\xB0F.';
+    console.log(result);
+}
+
+//Step 2 - Use a formula for the conversion and store it as a round number (not a decimal)
+function celsiusToFahrenheit(cel) {
+    let celsToFahr = cel * 9 / 5 + 32;
+    let result = cel + '\xB0C is ' + Math.floor(celsToFahr) + '\xB0F.'; //Math.floor used to round the answer to a whole number
+    console.log(result);
+}
+
+/*Portfolio Tasks [User Story 1] - this forumla is the reverse of the above allowing you to see the conversion from Fahrenheit to Celsisus
+Portfolio Tasks [User Story 3] - This will allow a user to change the decimal places
+Changing the *10)/10 to either 100 or 1000 will move the position of the decimal places*/
+function fahrenheitToCelsius(fah) {
+    let fahrToCels = (fah - 32) * 5 / 9;
+    let result = fah + '\xB0F is ' + (Math.floor(fahrToCels * 10) / 10) + '\xB0C.';
+    console.log(result);
+}
+
+//You can change these variable assignments to see the change in the console
+let celsius = 77;
+celsiusToFahrenheit(celsius);
+
+//You can change these variable assignments to see the change in the console
+let fahrenheit = 70;
+fahrenheitToCelsius(fahrenheit);
+
+/*Portfolio Tasks [User Story 2] - This will allow you to see other temperature measures such as Kelvin.
+Changing the inputConvert & outputConvert to either Fahrenheit, Celsisus or Kelvin will change the result in the console*/
+var tempInput = 45;
+var inputConvert = "Celsius";
+var outputConvert = "Kelvin";
+var tempFormula
+var tempSymbolInput
+var tempSymbolOutput
+
+function displayTempResult(res1, res2, res3) {
+    var result = tempInput + res1 + Math.floor(res2) + res3;
+    console.log(result);
+}
+
+//This part of the code is to switch the forumlas and symbols depending on the temperature & conversion chosen
+function inputToOutputTemp(inp) {
+    if (inputConvert == "Celsius" && outputConvert == "Fahrenheit") {
+        tempFormula = inp * 9 / 5 + 32;
+        tempSymbolInput = '\xB0C is ';
+        tempSymbolOutput = '\xB0F.';
+        displayTempResult(tempSymbolInput, tempFormula, tempSymbolOutput);
+    } else if (inputConvert == "Fahrenheit" && outputConvert == "Celsius") {
+        tempFormula = (inp - 32) * 5 / 9;
+        tempSymbolInput = '\xB0F is ';
+        tempSymbolOutput = '\xB0C.';
+        displayTempResult(tempSymbolInput, tempFormula, tempSymbolOutput)
+    } else if (inputConvert == "Celsius" && outputConvert == "Kelvin") {
+        tempFormula = inp + 273.15;
+        tempSymbolInput = '\xB0C is ';
+        tempSymbolOutput = '\u212A.';
+        displayTempResult(tempSymbolInput, tempFormula, tempSymbolOutput)
+    }
+}
+
+inputToOutputTemp(tempInput)
