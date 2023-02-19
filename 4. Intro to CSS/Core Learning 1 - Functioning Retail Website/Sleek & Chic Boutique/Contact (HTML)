@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sleekandchic.css">
+    <title>Sleek & Chic Boutique - Contact Us</title>
+</head>
+
+<body class="contact">
+    <img src="./Images/cropped-sleek-header-logo.jpg">
+
+    <div id="navigation">
+        <ul>
+            <li style="float:right"><a class="active" href="./shop.html">Store</a></li>
+            <li style="float:right"><a class="active" href="./contact.html">Contact</a></li>
+            <li style="float:right"><a class="active" href="./about.html">About</a></li>
+            <li style="float:right"><a class="active" href="./home.html">Home</a></li>
+        </ul>
+    </div>
+
+    <img src="./Images/shopfloorstorefront.jpg" width="100%" alt="shop floor" width="100%" height="100%"
+    style="vertical-align:middle;margin:50px 0px">
+    
+        <table style="width: 100%;">
+        <thead>
+            <th></th>
+        </thead>
+        <tr>
+            <th>
+            <td><img src="./Images/Klarna-ad-dw-600x763.jpg" width="100%"></td>
+            </th>
+            <th></th>
+            <td>
+                <form id="contact" action="./home.html" method="post">
+                    <h1>Contact us today</h1>
+                    <h4>Do you have any questions, queries or concerns?
+                        Then don't hesitate to contact us today.
+                        Complete the form below and we will respond soon.</h4>
+                    <br>
+
+                    <label for="fname">First Name*</label>
+                    <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your First name"
+                        size="22">
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="lname">Last Name*</label>
+                    <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Enter your Last name"
+                        size="22">
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="email">Email*</label>
+                    <input type="text" autocomplete="off" id="email" name="email">
+                    <br>
+                    <br>
+
+                    <div id="contact" class="contact">
+                        <label for="contact">What is your query?</label>
+                        <textarea id="contact" name="contact" rows="8" cols="30">Please write your query here</textarea>
+
+
+                    <a href="./shop.html">
+                        <button class="contact">Submit</button></a>
+    </table>
+    </div>
+    </form>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <div class="footer2">
+                <table>
+                    <tr>
+                        <th>
+                        <td>Email: example@example.com</td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                        <td>Phone: +44 (0)113 3452522</td>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <h6>Copyright Sleek and Chic © 2023. All Rights Reserved
+                - Website Design By Apphia.</h6>
+        </footer>
+    </div>
+</body>
+
+</html>
