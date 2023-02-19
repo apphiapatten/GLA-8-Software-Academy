@@ -1,0 +1,178 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333
+}
+
+li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.middle img p {
+    border: 5px solid black;
+    background-color: grey;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#products img {
+    text-align: center;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+#newsletter {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+/* This CSS styling applies specifically to the contact page*/
+
+body .contact {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/*Portfolio Task [User Story 2] - using border radius*/
+
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #000;
+    color: #000;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    margin: auto;
+}
+
+.largecircle {
+    width: 270px;
+    line-height: 130%;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
+    border: 3px solid #000;
+}
+
+#footer {
+    background-color: lightyellow;
+    overflow: auto;
+}
+
+#products {
+    float: inline-start;
+}
+
+/*Portfolio Tasks [User Story 1] - adding responsive CSS */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: white;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background: white;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: white;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: white;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background: white;
+    }
+}
