@@ -1,0 +1,29 @@
+//In order to set this program; we have to define the variables
+
+//Step 1 - Ask the user to type in their name
+let usersName = prompt("What is your name?");
+
+//Step 2 - Prompt the user to ask a question
+let usersQuestion = prompt("Enter your question");
+
+//Step 3 - Display one of eight stored phrases. The below phrases have been stored in an array
+let randomResponses = [
+    'It is certain',
+    'It is decidely so',
+    'Try again',
+    'Unsure for now',
+    'Dont count on it',
+    'Dont think so',
+    'Not looking too good',
+    'Probably',
+]
+
+//Step 4
+/*This stage picks a random phrase by knowing how many phrases are 
+listed in the array called randomResponses. In this situation 
+there are only 8 phrases, this satisfies criteria 3 because it 
+picks a random number that corresponds to a specifc phrase in the 
+array(0-7).*/
+let randomPhrase = randomResponses[Math.floor(Math.random()*randomResponses.length)]
+
+console.log(randomPhrase)
